@@ -22,37 +22,39 @@ public class Client
 	System.out.println("5: Salir ");
 	int op = sc.nextInt();
 	sc.nextLine();
-	System.out.println("Por favor ingrese el primer digito a operar: ");
-	int num1 = sc.nextInt();
-	sc.nextLine();
-	System.out.println("Por favor ingrese el segundo digito a operar: ");
-	int num2 = sc.nextInt();
-	sc.nextLine();
-	double result = 0;
-	switch (op){
-		case 1:
-			result = calculator.add(num1,num2);
-			System.out.println("El resultado es: " + result);
-			break;
-		case 2:
-			result = calculator.subtract(num1,num2);
-			System.out.println("El resultado es: " + result);
-			break;
-		case 3:
-			result = calculator.multiply(num1,num2);
-			System.out.println("El resultado es: " + result);
-			break;
-		case 4:
-			result = calculator.divide(num1,num2);
-			System.out.println("El resultado es: " + result);
-			break;
-		case 5:
-			System.out.println("Hasta pronto!");
-			exe = false;
-			break;
-		default:
-			System.out.println("Error");
-			break;
+	if (op == 5){
+		System.out.println("Hasta pronto!");
+		exe = false;
+	}
+	else{
+		System.out.println("Por favor ingrese el primer digito a operar: ");
+		int num1 = sc.nextInt();
+		sc.nextLine();
+		System.out.println("Por favor ingrese el segundo digito a operar: ");
+		int num2 = sc.nextInt();
+		sc.nextLine();
+		double result = 0;
+		switch (op){
+			case 1:
+				result = calculator.add(num1,num2);
+				System.out.println("El resultado es: " + result);
+				break;
+			case 2:
+				result = calculator.subtract(num1,num2);
+				System.out.println("El resultado es: " + result);
+				break;
+			case 3:
+				result = calculator.multiply(num1,num2);
+				System.out.println("El resultado es: " + result);
+				break;
+			case 4:
+				result = calculator.divide(num1,num2);
+				System.out.println("El resultado es: " + result);
+				break;
+			default:
+				System.out.println("Error");
+				break;
+		}
 	}
  }
  }
