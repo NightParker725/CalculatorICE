@@ -5,7 +5,7 @@ public class Client
  {
  try(com.zeroc.Ice.Communicator communicator = com.zeroc.Ice.Util.initialize(args))
  {
- com.zeroc.Ice.ObjectPrx base = communicator.stringToProxy("SimpleCalculator:tcp -h localhost -p 10000");
+ com.zeroc.Ice.ObjectPrx base = communicator.stringToProxy("SimpleCalculator:tcp -h 192.168.193.81 -p 10000");
  MathCalc.CalculatorPrx calculator = MathCalc.CalculatorPrx.checkedCast(base);
  if(calculator == null)
  {
