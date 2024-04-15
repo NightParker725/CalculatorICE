@@ -1,0 +1,12 @@
+<state>
+  <timestamp value='1712861567968' />
+  <sourceSet name='default'>
+    <source name='C:\Users\reyda\OneDrive\Escritorio\GIT\CalculatorICE\Calculator\cal.ice'>
+      <file name='C:\Users\reyda\OneDrive\Escritorio\GIT\CalculatorICE\Calculator\server\build\generated-src\MathCalc\Calculator.java' />
+      <file name='C:\Users\reyda\OneDrive\Escritorio\GIT\CalculatorICE\Calculator\server\build\generated-src\MathCalc\CalculatorPrx.java' />
+      <file name='C:\Users\reyda\OneDrive\Escritorio\GIT\CalculatorICE\Calculator\server\build\generated-src\MathCalc\_CalculatorPrxI.java' />
+    </source>
+    <arg value='C:\Program Files\ZeroC\Ice-3.7.10\\bin\slice2java.exe' />
+    <arg value='-IC:\Program Files\ZeroC\Ice-3.7.10\\slice' />
+  </sourceSet>
+</state>
